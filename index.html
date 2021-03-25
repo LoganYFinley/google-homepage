@@ -1,85 +1,106 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <style>
-    .bar {
-        display: flex;
-        align-items: center;
-        padding: 6px;
-        height: 60px;
-        flex-shrink: 0;
-        box-sizing: border-box;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        margin-left: 10px;
+        display: block;
+        padding: 14px 10px;
+        color: black;
+        text-decoration: none;
         font-size: 14px;
-        font-family: arial,sans-serif;
+        font-family: arial, sans-serif;
         color: #222;
-    }
-    p {
-        font-size: 14px;
-        font-family: arial,sans-serif;
-        color: #222;
-    }
-    .about {
-        margin-left: 15px;
-        display: inline-block;
-        padding: 5px;
-        margin: 0 5px;
-        cursor: pointer;
-    }
-    .store {
-        display: inline-block;
-        line-height: 24px;
-        vertical-align: middle;
-        cursor: pointer;
-        margin-left: 15px;
-    }
-    .gmail {
-        margin-left: 1020px;
-        display: inline-block;
-        line-height: 24px;
-        vertical-align: middle;
-        cursor: pointer;
-        padding-right: 15px;
-    }
-    .images {
-        display: inline-block;
-        line-height: 24px;
-        vertical-align: middle;
-        cursor: pointer;
-    }
-    .apps-image {
-        cursor: pointer;
-        margin-left: 30px;
-        width: 25px;
     }
     .sign-in {
-        margin-left: 5px;
-        cursor: pointer;
-        margin-left: 30px;
         background-color: #1a73e8;
         color: white;
         border-color: #1a73e8;
-        border-radius: 10%;
-        padding: 10px 24px;
-        text-align: center;
+        border-radius: 7%;
+        padding: 8px 24.5px;
         white-space: nowrap;
-        font-size: 15px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: -10px;
     }
+    .apps-image {
+        cursor: pointer;
+        margin-right: 10.5px;
+        margin-left: 25px;
+        width: 23px;
+        margin-top: 10.5px;
+    }
+    .google-image {
+        margin-top: 221px;
+        width: 272px;
+        margin-right: 287px;
+    }
+    .search-bar {
+        margin-top: 35px;
+        width: 500px;
+        margin-left: 455px;
+    }
+    .search {
+        margin-top: 85px;
+        margin-left: -400px;
+        border-radius: 7%;
+        border-color: white;
+        padding: 7px 12px;
+        cursor: pointer;
+    }
+    .feeling-lucky {
+        margin-top: 85px;
+        margin-left: -300px;
+        border-radius: 7%;
+        border-color: white;
+        padding: 7px 12px;
+        cursor: pointer;
+    }
+    .settings {
 
+    }
+    .bottom {
+        background-color: rgb(245, 244, 244);
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: rgb(148, 146, 146);
+    }
 </style>
 <head>
     <meta charset="utf-8">
     <title></title>
 </head>
-
 <body>
-    <div class="bar">
-        <p class="about">About</p>
-        <p class="store">Store</p>
-        <p class="gmail">Gmail</p>
-        <p class="images">Images</p>
-        <img class="apps-image" src="iconfinder_ic_apps_48px_352018.png"></img>
-        <button class="sign-in" type="sign-in">Sign in</button>
-    </div>
+    <ul>
+        <li><a style="margin-left: 8px;" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+        <li><a style="margin-left: 0px;" href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
+        <li style="float:right;"><a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><button class="sign-in" type="sign-in">Sign in</button></a></li>
+        <li style="float:right; margin-right: -10px;"><img class="apps-image" src="iconfinder_ic_apps_48px_352018.png"></img></li>
+        <li style="float:right; margin-right: -10px;"><a href="https://www.google.com/imghp?hl=en&ogbl">Images</a></li>
+        <li style="float:right; margin-right: -18px;"><a href="https://mail.google.com/">Gmail</a></li>
+        <li style="float:right;"></listyle><img class="google-image" src="googlelogo_color_272x92dp.png"></img></li>
+        <li><input class="search-bar" type="text"></li>
+        <li><a href="#search"><button class="search" type="search">Google Search</button></a></li>
+        <li><a href="#feeling-lucky"><button class="feeling-lucky" type="feeling-lucky">I'm Feeling Lucky</button></a></li>
+    </ul>
+    <ul>
+        <li><a class="bottom" style="margin-left: -1028px;" href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/">Advertising</a></li>
+        <li><a class="bottom" style="margin-left: -925px;"href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a></li>
+        <li><a class="bottom" style="margin-left: -830px;" href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+        <li><a class="bottom" style="margin-left: -405px;" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon Neutral Since 2007</a></li>
+        <li><a class="bottom" style="margin-left: 170px;" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
+        <li><a class="bottom" style="margin-left: 245px;" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
+        <li><a class="bottom" style="margin-left: 315px;" href="#settings">Settings</a></li>
+    </ul>
 </body>
-
 </html>
 
